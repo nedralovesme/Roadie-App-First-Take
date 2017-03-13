@@ -23,7 +23,7 @@ class LoginScreen extends React.Component {
     attemptLogin: PropTypes.func
   }
 
-  isAttempting = true
+  isAttempting = false
   keyboardDidShowListener = {}
   keyboardDidHideListener = {}
 
@@ -35,7 +35,7 @@ class LoginScreen extends React.Component {
       visibleHeight: Metrics.screenHeight,
       topLogo: { width: Metrics.screenWidth }
     }
-    this.isAttempting = true
+    this.isAttempting = false
   }
 
   componentWillReceiveProps (newProps) {
@@ -140,11 +140,6 @@ class LoginScreen extends React.Component {
             <TouchableOpacity style={Styles.loginButtonWrapper} onPress={this.handlePressLogin}>
               <View style={Styles.loginButton}>
                 <Text style={Styles.loginText}>Sign In</Text>
-              </View>
-            </TouchableOpacity>
-            <TouchableOpacity style={Styles.loginButtonWrapper} onPress={NavigationActions.pop}>
-              <View style={Styles.loginButton}>
-                <Text style={Styles.loginText}>Cancel</Text>
               </View>
             </TouchableOpacity>
           </View>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { ScrollView, Image, BackAndroid } from 'react-native'
+import { ScrollView, Image, Text, BackAndroid } from 'react-native'
 import styles from './Styles/DrawerContentStyles'
 import { Images } from '../Themes'
 
@@ -23,6 +23,9 @@ class DrawerContent extends Component {
     return (
       <ScrollView style={styles.container}>
         <Image source={Images.logo} style={styles.logo} />
+        <Text style={styles.text}>
+          {'Changed the text'}
+        </Text>
       </ScrollView>
     )
   }

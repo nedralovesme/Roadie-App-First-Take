@@ -3,9 +3,9 @@ import { Colors, Metrics } from '../../Themes'
 
 export default StyleSheet.create({
   container: {
-    paddingTop: 70,
-    backgroundColor: Colors.background
+    paddingTop: 70
   },
+  
   form: {
     backgroundColor: Colors.snow,
     margin: Metrics.baseMargin,
